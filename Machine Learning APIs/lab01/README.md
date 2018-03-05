@@ -110,7 +110,7 @@ curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY
 
 ```
 
-##Conclusion
+## Conclusion
 
 You've combined 3 different machine learning APIs: 
 
@@ -118,7 +118,7 @@ You've combined 3 different machine learning APIs:
 2. Translation API translated that text to English 
 3. Natural Language API to found entities in that text.
 
-###WHAT WE'VE COVERED
+### WHAT WE'VE COVERED
 * Use cases for combining multiple machine learning APIs
 * Creating a Vision API OCR request and calling the API with curl
 * Translating text with the Translation API
