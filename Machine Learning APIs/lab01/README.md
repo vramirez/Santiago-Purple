@@ -102,7 +102,7 @@ Replace text
 STR=$(jq .data.translations[0].translatedText  translation-response.json) && STR="${STR//\"}" && sed -i "s|your_text_here|$STR|g" nl-request.json
 ```
 
-Call the analyzeEntities endpoint of the Natural Language API with this curl request:
+Call the analyzeEntities endpoint of the Natural Language API with this ```curl``` request:
 
 ```bash
 curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY}" \
@@ -110,8 +110,13 @@ curl "https://language.googleapis.com/v1/documents:analyzeEntities?key=${API_KEY
 
 ```
 
-##Congratulations!
-You've learned how to combine 3 different machine learning APIs: the Vision API's OCR method extracted text from an image, then the Translation API translated that text to English and the Natural Language API to found entities in that text.
+##Conclusion
+
+You've combined 3 different machine learning APIs: 
+
+1. Vision API's OCR method extracted text from an image
+2. Translation API translated that text to English 
+3. Natural Language API to found entities in that text.
 
 ###WHAT WE'VE COVERED
 * Use cases for combining multiple machine learning APIs
